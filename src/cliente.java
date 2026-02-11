@@ -10,10 +10,17 @@ public class cliente {
         this.saldo = saldo;
     }
 
-    public String getNombre() { return nombre; }
-    public String getId() { return id; }
-    public double getSaldo() { return saldo; }
+    public String getNombre() {
+        return nombre;
+    }
 
+    public String getId() {
+        return id;
+    }
 
+    public double getSaldo() {
+        return saldo;
+    }
 
-    git add Cliente.java}
+}
+
