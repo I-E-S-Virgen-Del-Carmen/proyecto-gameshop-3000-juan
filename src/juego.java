@@ -1,19 +1,18 @@
 public class juego {
-    // ATRIBUTOS
+
     private String titulo;
     private double precio;
     private String genero;
     private boolean disponible;
 
-    // CONSTRUCTOR
-    public Juego(String titulo, double precio, String genero) {
+        public Juego(String titulo, double precio, String genero) {
         this.titulo = titulo;
         this.precio = precio;
         this.genero = genero;
         this.disponible = true; // Cuando se crea, está disponible
     }
 
-    // GETTERS
+
     public String getTitulo() {
         return titulo;
     }
@@ -30,7 +29,7 @@ public class juego {
         return disponible;
     }
 
-    // SETTERS (opcionales, pero útiles)
+
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
@@ -43,7 +42,7 @@ public class juego {
         this.genero = genero;
     }
 
-    // MÉTODO PARA ALQUILAR
+
     public void alquilar() {
         if (disponible) {
             disponible = false;
@@ -53,13 +52,13 @@ public class juego {
         }
     }
 
-    // MÉTODO PARA DEVOLVER
+
     public void devolver() {
         disponible = true;
         System.out.println("El juego \"" + titulo + "\" ha sido devuelto.");
     }
 
-    // toString()
+
     @Override
     public String toString() {
         return "Juego{" +
